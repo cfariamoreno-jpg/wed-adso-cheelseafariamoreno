@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 15px;
+    font-family: Arial, sans-serif;
+    background-color: #fff0f5;
+    color: #444;
+}
+
+main {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #c2185b;
+}
+
+#formInscripcion {
+    max-width: 550px;
+    margin: 25px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px #e2b5c5;
+}
+
+fieldset {
+    border: 2px solid #e8a0b8;
+    border-radius: 10px;
+    padding: 18px;
+    margin-bottom: 20px;
+}
+
+legend {
+    color: #c2185b;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo > label {
+    display: block;
+    margin-bottom: 7px;
+    color: #880e4f;
+}
+
+.campo input:not([type="radio"]):not([type="checkbox"]),
+.campo select {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #d9a0b2;
+    border-radius: 7px;
+}
+
+input:focus, 
+select:focus {
+    outline: 2px solid #c2185b;
+}
+
+input:user-invalid,
+select:user-invalid,
+.invalido {
+    border: 2px solid red !important;
+}
+
+.opcion {
+    display: block;
+    margin: 10px 0;
+}
+
+.opcion input {
+    accent-color: #c2185b;
+}
+
+.error {
+    display: block;
+    color: red;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.boton {
+    width: 100%;
+    padding: 13px;
+    background-color: #c2185b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: #880e4f;
+}
+
+#resumen {
+    max-width: 550px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    #formInscripcion {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+}

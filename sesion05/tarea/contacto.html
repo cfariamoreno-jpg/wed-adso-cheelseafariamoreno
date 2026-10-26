@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Mi Tienda</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <main>
+        <h1>Formulario de contacto</h1>
+        <p>Escríbenos si tienes alguna pregunta sobre nuestros productos.</p>
+
+        <form action="#" method="post">
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="celular">Celular:</label>
+            <input type="tel" id="celular" name="celular">
+
+            <label for="motivo">Motivo:</label>
+            <select id="motivo" name="motivo" required>
+                <option value="">Selecciona una opción</option>
+                <option value="Pedido">Pedido</option>
+                <option value="Pregunta">Pregunta</option>
+                <option value="Queja">Queja</option>
+            </select>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+            <button type="submit">Enviar mensaje</button>
+
+        </form>
+
+    </main>
+
+</body>
+</html>

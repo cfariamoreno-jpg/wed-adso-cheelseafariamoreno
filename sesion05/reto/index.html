@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción SENA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <h1>Formulario de inscripción SENA</h1>
+
+        <form action="#" id="formInscripcion">
+
+            <fieldset>
+                <legend>Datos personales</legend>
+
+                <div class="campo">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre"
+                           required minlength="3">
+                    <small id="error-nombre" class="error"></small>
+                </div>
+
+                <div class="campo">
+                    <label for="documento">Documento</label>
+                    <input type="text" id="documento" name="documento"
+                           inputmode="numeric"
+                           pattern="[0-9]{6,10}"
+                           title="Escribe entre 6 y 10 números"
+                           required>
+                    <small id="error-documento" class="error"></small>
+                </div>
+
+                <div class="campo">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" required>
+                    <small id="error-correo" class="error"></small>
+                </div>
+
+                <div class="campo">
+                    <label for="telefono">Celular</label>
+                    <input type="tel" id="telefono" name="telefono"
+                           pattern="3[0-9]{9}"
+                           title="El celular debe tener 10 dígitos y comenzar por 3"
+                           required>
+                    <small id="error-telefono" class="error"></small>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Curso</legend>
+
+                <div class="campo">
+                    <label for="programa">Programa</label>
+                    <select id="programa" name="programa" required>
+                        <option value="">Selecciona un curso</option>
+                        <option value="Python">Python</option>
+                        <option value="Bases de datos">Bases de datos</option>
+                        <option value="Desarrollo web">Desarrollo web</option>
+                    </select>
+                    <small id="error-programa" class="error"></small>
+                </div>
+
+                <div class="campo">
+                    <label>Jornada</label>
+
+                    <label class="opcion">
+                        <input type="radio" name="jornada"
+                               value="Mañana" required>
+                        Mañana
+                    </label>
+
+                    <label class="opcion">
+                        <input type="radio" name="jornada"
+                               value="Tarde">
+                        Tarde
+                    </label>
+
+                    <label class="opcion">
+                        <input type="radio" name="jornada"
+                               value="Noche">
+                        Noche
+                    </label>
+
+                    <small id="error-jornada" class="error"></small>
+                </div>
+
+                <div class="campo">
+                    <label class="opcion" for="terminos">
+                        <input type="checkbox" id="terminos"
+                               name="terminos" required>
+                        Autorizo el tratamiento de mis datos
+                    </label>
+                    <small id="error-terminos" class="error"></small>
+                </div>
+            </fieldset>
+
+            <button type="submit" class="boton">
+                Inscribirme
+            </button>
+
+        </form>
+
+        <section id="resumen"></section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
