@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box; /* medir todas las cajas que esten dentro del marco*/
+}
+
+body{
+    margin : 0;
+    padding: 2rem 1 rem; 
+    font-family:"poppins", Arial, sans-serif;
+    background-color: #f2f4f7;
+    color: #1f2933;
+}
+.tarjeta{
+    max-width: 360px; /*no crezca mas de 360px */
+    margin: 0 auto; /* centrar un elemento */
+    padding: 2rem;
+    border: 1px solid #e4e7eb;
+    border-radius: 16px;
+    background-color:#fff;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    text-align: center;
+}
+
+.avatar{
+        width: 96px;
+        height: 96px;
+        margin:0 auto 1rem;
+        border-radius: 50%;
+        background-color: #e3f5d8;
+        font-size: 3rem;
+        line-height: 96px; /*centra el emoji en vertical*/
+}
+    
+#nombre{
+    margin: 0;
+    font-size: 1.6rem;
+}
+.rol{
+    margin: 0.25rem 0;
+    color: #2e7d00;
+    font-weight: 600;
+}
+
+.ciudad{
+    margin: 0 0 1.5rem;
+    color: #52606d;
+
+}
+
+h2{
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+}
+
+.habilidades{
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem;
+}
+.habilidades li{
+    display: inline-block;
+    margin: 0.25rem;
+    padding: 0.35rem 0.8rem;
+    border-radius: 999px;
+    background-color: #1f5c00;
+    font-size: 0.9rem;
+}
+.boton{
+    padding: 0.7rem 1.2rem;
+    border: 2px solid #2e7d00;
+    border-radius: 8px;
+    background-color: #2e7d00;
+    color:#fff;
+    font: inherit;
+    cursor: pointer;
+}
+.boton:hover{
+    background-color: #256400;
+}
+
+.boton:focus-visible{
+    outline: 3px solid #ffb300;
+    outline-offset: 3px;
+}
+body.oscuro{
+    background-color: #111827;
+    color: #e5e7eb
+}
+
+body.oscuro .tarjeta{
+    background-color: #1f2937;
+    border-color: #374151;
+    box-shadow: none;
+}
+body.oscuro .rol{
+    color: #86efac;
+}
+
+body.oscuro .ciudad{
+    color:#9ca3af;
+
+
+}
+
+body.oscuro .habilidades li{
+    background-color: #374151;
+    color:#d1fae5;
+}
+
+.oculto{
+    display:none;
+}
