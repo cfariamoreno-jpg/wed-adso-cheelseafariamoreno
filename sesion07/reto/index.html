@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tablero - La Bendición Belleza</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+
+    <header class="app-encabezado">
+      <p class="logo">💄 La Bendición Belleza</p>
+    </header>
+
+    <nav class="app-menu">
+      <ul>
+        <li><a href="#resumen">📊 Resumen</a></li>
+        <li><a href="#productos">💄 Productos</a></li>
+        <li><a href="#pedidos">🧾 Pedidos</a></li>
+        <li><a href="#clientes">👥 Clientes</a></li>
+        <li><a href="#reportes">📈 Reportes</a></li>
+      </ul>
+    </nav>
+
+    <main class="app-contenido">
+      <h1 id="resumen">Resumen del día</h1>
+
+      <section class="indicadores">
+        <div class="indicador">
+          <p class="titulo">Ventas del día</p>
+          <p class="valor">$1.250.000</p>
+        </div>
+        <div class="indicador">
+          <p class="titulo">Clientes atendidos</p>
+          <p class="valor">48</p>
+        </div>
+        <div class="indicador">
+          <p class="titulo">Pedidos pendientes</p>
+          <p class="valor">7</p>
+        </div>
+        <div class="indicador">
+          <p class="titulo">Domicilios hoy</p>
+          <p class="valor">12</p>
+        </div>
+      </section>
+
+      <h2 id="productos">Productos más vendidos</h2>
+
+      <section class="galeria">
+        <figure class="destacada">
+          <img src="https://tse1.explicit.bing.net/th/id/OIP.590OMi12ZtbJeCyhOwXpKAHaJ4?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Labial mate">
+          <figcaption><strong>Labial mate</strong><br>El más vendido del mes</figcaption>
+        </figure>
+        <figure>
+          <img src="https://www.somosmamas.com.ar/wp-content/uploads/2020/07/cremas-hidratantes-para-la-cara-de-neutrogena-1536x1536.jpg" alt="Crema hidratante">
+          <figcaption><strong>Crema hidratante</strong><br>120 unidades</figcaption>
+        </figure>
+        <figure>
+          <img src="https://th.bing.com/th/id/OIP.ubEtQgRGwfzRAN05c7UJLgHaE8?w=306&h=204&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Esmaltes">
+          <figcaption><strong>Esmaltes</strong><br>95 unidades</figcaption>
+        </figure>
+        <figure>
+          <img src="https://www.yanbal.com/medias/20013224-es-11.gif?context=bWFzdGVyfGltYWdlc3w0Njk5MzN8aW1hZ2UvZ2lmfGgxZC9oYzQvMTAyNzE5NjE1MTQwMTQvMjAwMTMyMjRfZXNfMTEuZ2lmfGY5YTQwYzQ2NTE2MzFhNDg0NTY3NWZiMTdmYmM3YzEyMmIyNDIwODBkMGQxNzY3ZTZjOGIzMzU5OGFiNzYyY2E" alt="Base líquida">
+          <figcaption><strong>Base líquida</strong><br>88 unidades</figcaption>
+        </figure>
+        <figure>
+          <img src="https://farmaenlace.vtexassets.com/arquivos/ids/179659/0000142450%20CELDERMA%20JAB%20FAC%20PROV%20B5%20PSENS198ML.jpg?v=638896704391470000" alt="Jabón facial">
+          <figcaption><strong>Jabón facial</strong><br>76 unidades</figcaption>
+        </figure>
+        <figure>
+          <img src="https://i5.walmartimages.com/seo/Milagros-Shampoo-y-Tratamiento-3-pack-milagros-shampoo-colombia-treatment-Shampoo-Milagros-Shampoo-ultra-nutritivo-shampoo-Magia-Capilar-y-Tratamient_9f5c7071-0ad7-4a7b-87dd-82cc328a8d49.98c7eab0be5700120dd495f583f96227.jpeg" alt="Shampoo">
+          <figcaption><strong>Shampoo</strong><br>70 unidades</figcaption>
+        </figure>
+        <figure>
+          <img src="data:image/webp;base64,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" alt="Pestañina">
+          <figcaption><strong>Pestañina</strong><br>64 unidades</figcaption>
+        </figure>
+      </section>
+
+      <h2 id="pedidos">Pedidos</h2>
+      <section class="caja">
+        <p>001 · María Gómez · Labial mate · <strong>Pendiente</strong></p>
+        <p>002 · Laura Pérez · Crema hidratante · <strong>Entregado</strong></p>
+        <p>003 · Ana Rojas · Base líquida · <strong>En camino</strong></p>
+      </section>
+
+      <h2 id="clientes">Clientes</h2>
+      <section class="caja">
+        <p>María Gómez · 300 111 1111 · 8 compras</p>
+        <p>Laura Pérez · 300 222 2222 · 5 compras</p>
+        <p>Ana Rojas · 300 333 3333 · 12 compras</p>
+      </section>
+
+      <h2 id="reportes">Reportes</h2>
+      <section class="caja">
+        <p>Ventas de la semana: <strong>$7.800.000</strong></p>
+        <p>Ventas del mes: <strong>$29.500.000</strong></p>
+        <p>Producto más vendido: <strong>Labial mate</strong></p>
+      </section>
+    </main>
+
+    <footer class="app-pie">
+      <p>Datos de ejemplo</p>
+    </footer>
+
+  </div>
+</body>
+</html>

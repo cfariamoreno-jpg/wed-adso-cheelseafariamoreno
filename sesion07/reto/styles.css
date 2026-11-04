@@ -1,0 +1,67 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #fff0f6; color: #333; }
+html { scroll-behavior: smooth; }
+
+.app {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 220px 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "encabezado encabezado"
+    "menu       contenido"
+    "pie        pie";
+  gap: 1rem;
+  padding: 1rem;
+}
+.app-encabezado { grid-area: encabezado; }
+.app-menu       { grid-area: menu; }
+.app-contenido  { grid-area: contenido; min-width: 0; }
+.app-pie        { grid-area: pie; }
+
+.app-encabezado, .app-pie {
+  background: #d63384;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+}
+.app-pie { text-align: center; }
+.app-pie p { margin: 0; }
+.logo { margin: 0; font-weight: 600; font-size: 1.4rem; }
+
+.app-menu { background: #fff; padding: 1rem; border-radius: 10px; }
+.app-menu ul { margin: 0; padding: 0; list-style: none; }
+.app-menu a {
+  display: block;
+  padding: 0.6rem 0.75rem;
+  border-radius: 8px;
+  color: #d63384;
+  text-decoration: none;
+  font-weight: bold;
+}
+.app-menu a:hover { background: #ffd6e8; }
+
+h1, h2 { color: #d63384; margin: 0 0 1rem; }
+.app-contenido h2 { margin-top: 2rem; }
+
+.indicadores {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+.indicador { background: #fff; padding: 1rem; border-radius: 10px; text-align: center; }
+.indicador .titulo { margin: 0; color: #777; }
+.indicador .valor { margin: 0.25rem 0 0; font-size: 1.8rem; font-weight: bold; color: #d63384; }
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+.galeria figure { margin: 0; background: #fff; border-radius: 10px; overflow: hidden; }
+.galeria img { display: block; width: 100%; height: 180px; object-fit: cover; }
+.galeria figcaption { padding: 0.75rem; text-align: center; }
+.galeria .destacada { grid-column: span 2; }
+
+.caja { background: #fff; padding: 1rem 1.5rem; border-radius: 10px; }
+.caja p { margin: 0.5rem 0; }
