@@ -1,0 +1,59 @@
+/* ============================================================
+   DIFERENCIA ENTRE justify-content Y align-items
+   - justify-content: alinea y distribuye los elementos a lo largo
+     del EJE PRINCIPAL del contenedor flex (por defecto, el eje
+     horizontal). Ej.: space-between separa el nombre del negocio
+     y los enlaces hacia los extremos.
+   - align-items: alinea los elementos en el EJE CRUZADO (por
+     defecto, el eje vertical). Ej.: center centra verticalmente
+     el nombre y los enlaces dentro del menú.
+   Si flex-direction cambia a column, los ejes se intercambian.
+   ============================================================ */
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #fff8f0;
+}
+
+/* Menú en fila con Flexbox */
+.menu {
+  display: flex;
+  justify-content: space-between; /* nombre a un lado, enlaces al otro */
+  align-items: center;            /* centrado vertical */
+  padding: 15px 30px;
+  background: #b5651d;
+}
+
+.menu .logo {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu a:hover { text-decoration: underline; }
+
+main { max-width: 800px; margin: 30px auto; padding: 0 20px; }
+h1 { margin-bottom: 15px; color: #b5651d; }
+p, li { margin-bottom: 10px; }
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #b5651d;
+  color: #fff;
+}
