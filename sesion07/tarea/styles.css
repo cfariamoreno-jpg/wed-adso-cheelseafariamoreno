@@ -1,0 +1,56 @@
+/* ============================================================
+   CUÁNDO USARÍA FLEXBOX Y CUÁNDO GRID (con mis palabras)
+   - Flexbox lo usaría cuando solo necesito ordenar cosas en UNA
+     línea, ya sea una fila o una columna. Por ejemplo: un menú,
+     una fila de botones o centrar algo dentro de una caja.
+   - Grid lo usaría cuando necesito organizar en DOS direcciones
+     a la vez, en filas y columnas, como una vitrina de productos,
+     un tablero o la estructura completa de una página.
+   En resumen: Flexbox para acomodar elementos en una línea y
+   Grid para armar la cuadrícula completa.
+   ============================================================ */
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff0f6;
+  color: #333;
+}
+
+.encabezado, .pie {
+  background: #d63384;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+main { max-width: 1100px; margin: 30px auto; padding: 0 20px; }
+
+/* Vitrina convertida a Grid */
+.vitrina {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Tarjetas: ya no llevan flex: 1 1 220px */
+.producto {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.producto img {
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.producto h3 { color: #d63384; margin-bottom: 5px; }
+.producto p { color: #777; margin-bottom: 8px; }
+.precio { font-weight: bold; }
