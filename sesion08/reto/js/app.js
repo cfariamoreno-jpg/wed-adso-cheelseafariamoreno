@@ -1,11 +1,13 @@
-const botonTema = document.getElementById('tema');
+const botonTema = document.getElementById("tema");
 
-botonTema.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-    
-    if (document.body.classList.contains('dark-mode')) {
-        botonTema.textContent = '☀️ Cambiar tema';
+botonTema.addEventListener("click", function() {
+
+    document.body.classList.toggle("oscuro");
+
+    if (document.body.classList.contains("oscuro")) {
+        botonTema.textContent = "☀️ Modo claro";
     } else {
-        botonTema.textContent = '🌙 Cambiar tema';
+        botonTema.textContent = "🌙 Cambiar tema";
     }
+
 });
