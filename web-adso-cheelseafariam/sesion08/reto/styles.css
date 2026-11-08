@@ -1,0 +1,550 @@
+/* =====================================
+   1. VARIABLES CSS
+===================================== */
+
+:root {
+    --color-principal: #a45e65;
+    --color-secundario: #f4e4df;
+    --color-fondo: #fff9f7;
+    --color-tarjeta: #ffffff;
+    --color-texto: #493832;
+    --color-oscuro: #71464a;
+    --color-dorado: #d6ad78;
+
+    --fuente: 'Segoe UI', Arial, sans-serif;
+
+    --radio: 20px;
+    --sombra: 0 5px 18px rgba(0,0,0,0.10);
+    --transicion: 0.3s;
+}
+
+/* =====================================
+   2. CONFIGURACIÓN GENERAL
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: var(--fuente);
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    transition: var(--transicion);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* =====================================
+   3. ENCABEZADO
+===================================== */
+
+.encabezado {
+    width: 100%;
+    background-color: var(--color-secundario);
+    padding: 20px 7%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    box-shadow: var(--sombra);
+}
+
+.encabezado h1 {
+    color: var(--color-principal);
+    font-size: 32px;
+    letter-spacing: 5px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: var(--color-texto);
+    text-decoration: none;
+    font-weight: bold;
+    transition: var(--transicion);
+}
+
+nav a:hover {
+    color: var(--color-principal);
+}
+
+/* BOTÓN DE TEMA */
+
+#tema {
+    background-color: var(--color-principal);
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: var(--transicion);
+}
+
+#tema:hover {
+    background-color: var(--color-oscuro);
+    transform: scale(1.05);
+}
+
+/* =====================================
+   4. PORTADA
+===================================== */
+
+.portada {
+    width: 100%;
+    min-height: 480px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 45px;
+
+    padding: 60px 8%;
+
+    background: linear-gradient(
+        135deg,
+        var(--color-secundario),
+        var(--color-fondo)
+    );
+}
+
+.portada div {
+    flex: 1;
+    max-width: 500px;
+}
+
+.subtitulo {
+    color: var(--color-principal);
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.portada h2 {
+    color: var(--color-oscuro);
+    font-size: 43px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.portada p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+.portada img {
+    width: 45%;
+    max-width: 300px;
+    height: 250px;
+    object-fit: contain;
+    object-position: center;
+    background-color: transparent;
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+}
+/* BOTÓN VER COLECCIÓN */
+
+.boton {
+    display: inline-block;
+    background-color: var(--color-principal);
+    color: white;
+    text-decoration: none;
+    padding: 14px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: var(--transicion);
+}
+
+.boton:hover {
+    background-color: var(--color-oscuro);
+    transform: translateY(-4px);
+}
+
+/* =====================================
+   5. TÍTULOS
+===================================== */
+
+main section > h2 {
+    width: 100%;
+    text-align: center;
+    color: var(--color-principal);
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+/* =====================================
+   6. BENEFICIOS
+===================================== */
+
+#beneficio {
+    padding: 65px 7%;
+    background-color: var(--color-fondo);
+}
+
+.beneficios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.beneficios article {
+    background-color: var(--color-tarjeta);
+    padding: 35px 20px;
+    text-align: center;
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+    transition: var(--transicion);
+}
+
+.beneficios article:hover {
+    transform: translateY(-8px);
+}
+
+.beneficios h3 {
+    color: var(--color-principal);
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.beneficios p {
+    line-height: 1.7;
+}
+
+/* =====================================
+   7. PRODUCTOS
+===================================== */
+
+#productos {
+    padding: 65px 7%;
+    background-color: var(--color-secundario);
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.producto {
+    background-color: var(--color-tarjeta);
+    padding: 18px;
+    text-align: center;
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+    transition: var(--transicion);
+    overflow: hidden;
+}
+
+.producto:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(164,94,101,0.20);
+}
+
+/* IMÁGENES COMPLETAS SIN RECORTAR */
+
+.producto img {
+    width: 200%;
+    height: 300px;
+
+    object-fit: contain;
+    object-position: center;
+
+    background-color: #ffffff;
+    border-radius: 20px;
+    margin-bottom: 18px;
+}
+
+.producto h3 {
+    color: var(--color-principal);
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.producto p {
+    color: var(--color-texto);
+    line-height: 1.6;
+}
+
+/* =====================================
+   8. CÓMO PEDIR
+===================================== */
+
+#como-pedir {
+    padding: 65px 10%;
+}
+
+.pasos {
+    max-width: 750px;
+    margin: auto;
+    background-color: var(--color-tarjeta);
+    padding: 35px 45px;
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+}
+
+.pasos li {
+    padding: 12px;
+    line-height: 1.7;
+}
+
+/* =====================================
+   9. PIE DE PÁGINA
+===================================== */
+
+footer {
+    background-color: var(--color-oscuro);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    line-height: 2;
+}
+
+footer h2 {
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+footer a {
+    display: inline-block;
+    background-color: var(--color-secundario);
+    color: var(--color-oscuro);
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    margin: 15px 0;
+    transition: var(--transicion);
+}
+
+footer a:hover {
+    background-color: white;
+    transform: scale(1.05);
+}
+
+/* =====================================
+   10. TABLET
+===================================== */
+
+@media (max-width: 900px) {
+
+    .encabezado {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .portada {
+        gap: 25px;
+        padding: 45px 5%;
+    }
+
+    .portada h2 {
+        font-size: 34px;
+    }
+
+    .portada img {
+        width: 45%;
+        height: 300px;
+    }
+
+    .beneficios {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .productos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* =====================================
+   11. CELULAR
+===================================== */
+
+@media (max-width: 600px) {
+
+    .encabezado {
+        flex-direction: column;
+        padding: 22px 15px;
+    }
+
+    .encabezado h1 {
+        font-size: 28px;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .portada {
+        flex-direction: column;
+        text-align: center;
+        padding: 45px 20px;
+    }
+
+    .portada h2 {
+        font-size: 30px;
+    }
+
+    .portada img {
+        width: 100%;
+        height: 260px;
+    }
+
+    #beneficio {
+        padding: 45px 20px;
+    }
+
+    .beneficios {
+        grid-template-columns: 1fr;
+    }
+
+    #productos {
+        padding: 45px 20px;
+    }
+
+    .productos {
+        grid-template-columns: 1fr;
+    }
+
+    .producto img {
+        height: 270px;
+    }
+
+    main section > h2 {
+        font-size: 26px;
+    }
+
+    #como-pedir {
+        padding: 45px 20px;
+    }
+
+    .pasos {
+        padding: 25px;
+    }
+
+    footer {
+        padding: 35px 15px;
+    }
+}
+
+/* =====================================
+   12. MODO OSCURO
+===================================== */
+
+body.oscuro {
+    --color-principal: #e9a9b5;
+    --color-secundario: #38292c;
+    --color-fondo: #211b1c;
+    --color-tarjeta: #38292c;
+    --color-texto: #f8e9e9;
+    --color-oscuro: #211b1c;
+}
+
+body.oscuro .portada {
+    background: linear-gradient(
+        135deg,
+        #38292c,
+        #211b1c
+    );
+}
+
+body.oscuro .portada h2 {
+    color: #e9a9b5;
+}
+
+body.oscuro .productos p {
+    color: #f8e9e9;
+}
+
+body.oscuro .producto img {
+    background-color: #ffffff;
+}
+/* Acercar el contenido de la portada */
+.portada {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    max-width: 950px;
+    margin: 15px auto;
+    padding: 20px 35px;
+}
+
+/* Reducir la separación del logo */
+.portada img {
+    width: 280px;
+    height: 230px;
+    object-fit: contain;
+    margin: 0;
+}
+
+/* Acercar los beneficios */
+#beneficio {
+    margin-top: 10px;
+    padding: 20px;
+}
+
+/* Reducir espacios generales */
+section {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* Ajustar el encabezado */
+.encabezado {
+    padding: 10px 25px;
+}
+/* MODO OSCURO */
+body.oscuro {
+    --color-fondo: #241e22;
+    --color-tarjeta: #382d34;
+    --color-texto: #f8e9ef;
+    --color-principal: #c9829a;
+    --color-secundario: #493743;
+    --color-oscuro: #f3b8cc;
+
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+/* Encabezado oscuro */
+body.oscuro .encabezado {
+    background-color: #382d34;
+}
+
+/* Tarjetas oscuras */
+body.oscuro .producto,
+body.oscuro #beneficio article {
+    background-color: var(--color-tarjeta);
+    color: var(--color-texto);
+}
+
+/* Textos */
+body.oscuro h1,
+body.oscuro h2,
+body.oscuro h3,
+body.oscuro p {
+    color: var(--color-texto);
+}
