@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis tareas de la casa</title>
+    <link rel="stylesheet" href="kit.css">
+</head>
+<body>
+
+    <header class="encabezado">
+        <div class="contenedor">
+            <p>MI ORGANIZACIÓN PERSONAL</p>
+            <h1>Mis tareas de la casa 🏡</h1>
+            <p>Organiza tus actividades y mantén tu hogar limpio.</p>
+        </div>
+    </header>
+
+    <main class="contenedor">
+
+        <section class="tarjeta">
+            <h2>Agregar una tarea</h2>
+
+            <form id="formulario-tarea">
+                <label for="nombre-tarea">Nombre de la tarea</label>
+
+                <div class="fila-formulario">
+                    <input
+                        type="text"
+                        id="nombre-tarea"
+                        placeholder="Escribe una tarea..."
+                    >
+
+                    <button class="boton boton-principal" type="submit">
+                        + Agregar
+                    </button>
+                </div>
+
+                <p id="mensaje-error" class="alerta alerta-error oculto">
+                    Por favor, escribe una tarea.
+                </p>
+            </form>
+        </section>
+
+        <section class="resumen">
+            <div>
+                <span class="numero" id="total-tareas">5</span>
+                <span>Tareas totales</span>
+            </div>
+
+            <div>
+                <span class="numero" id="tareas-pendientes">4</span>
+                <span>Pendientes</span>
+            </div>
+
+            <div>
+                <span class="numero" id="tareas-hechas">1</span>
+                <span>Completadas</span>
+            </div>
+        </section>
+
+        <section class="tarjeta lista">
+            <h2>Mi lista de tareas 📝</h2>
+
+            <ul id="lista-tareas">
+
+                <li class="tarea">
+                    <span>Barrer y trapear la casa</span>
+                    <button class="boton-icono" type="button"
+                        aria-label="Completar barrer y trapear la casa">✓</button>
+                </li>
+
+                <li class="tarea hecha">
+                    <span>Lavar los platos</span>
+                    <span class="estado">Completada</span>
+                </li>
+
+                <li class="tarea">
+                    <span>Organizar mi habitación</span>
+                    <button class="boton-icono" type="button"
+                        aria-label="Completar organizar mi habitación">✓</button>
+                </li>
+
+                <li class="tarea">
+                    <span>Limpiar la cocina</span>
+                    <button class="boton-icono" type="button"
+                        aria-label="Completar limpiar la cocina">✓</button>
+                </li>
+
+                <li class="tarea">
+                    <span>Sacar la basura</span>
+                    <button class="boton-icono" type="button"
+                        aria-label="Completar sacar la basura">✓</button>
+                </li>
+
+            </ul>
+        </section>
+
+        <footer>
+            <p>Mis tareas de la casa | SENA ADSO | Sesión 10</p>
+        </footer>
+
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
