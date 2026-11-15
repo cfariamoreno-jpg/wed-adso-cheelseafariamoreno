@@ -1,0 +1,261 @@
+/* =================================
+   1. VARIABLES
+================================= */
+
+:root {
+    --color-primario: #7656A5;
+    --color-secundario: #E8DDF5;
+    --color-acento: #D89A78;
+    --color-fondo: #F8F6FA;
+    --color-texto: #302B36;
+}
+
+/* =================================
+   2. BASE
+================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: Arial, sans-serif;
+}
+
+.encabezado {
+    background: var(--color-primario);
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.seccion {
+    background: white;
+    padding: 25px;
+    margin: 25px 0;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px #ddd;
+}
+
+h2 {
+    color: var(--color-primario);
+}
+
+a {
+    color: var(--color-primario);
+}
+
+a:hover {
+    color: var(--color-acento);
+}
+
+/* =================================
+   3. COMPONENTES
+================================= */
+
+/* Paleta */
+
+.colores {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.muestra {
+    text-align: center;
+}
+
+.color {
+    width: 100px;
+    height: 70px;
+    border-radius: 10px;
+}
+
+.primario {
+    background: var(--color-primario);
+}
+
+.secundario {
+    background: var(--color-secundario);
+}
+
+.acento {
+    background: var(--color-acento);
+}
+
+.fondo {
+    background: var(--color-fondo);
+    border: 1px solid #ddd;
+}
+
+.texto {
+    background: var(--color-texto);
+}
+
+/* Botones */
+
+.btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 5px;
+    font-weight: bold;
+}
+
+.principal {
+    background: var(--color-primario);
+    color: white;
+}
+
+.secundario-btn {
+    background: var(--color-secundario);
+    color: var(--color-primario);
+}
+
+.peligro {
+    background: #D9534F;
+    color: white;
+}
+
+.deshabilitado {
+    background: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}
+
+.btn:hover:not(:disabled) {
+    opacity: 0.8;
+}
+
+.btn:focus-visible,
+a:focus-visible,
+input:focus-visible {
+    outline: 3px solid var(--color-acento);
+    outline-offset: 3px;
+}
+
+/* Alertas */
+
+.alerta {
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+.info {
+    background: #D9EDF7;
+    color: #31708F;
+}
+
+.exito {
+    background: #DFF0D8;
+    color: #3C763D;
+}
+
+.advertencia {
+    background: #FCF8E3;
+    color: #8A6D3B;
+}
+
+.error {
+    background: #F2DEDE;
+    color: #A94442;
+}
+
+/* Insignias */
+
+.insignia {
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    margin-right: 5px;
+}
+
+.nuevo {
+    background: #E8DDF5;
+    color: #7656A5;
+}
+
+.proceso {
+    background: #FFF0C9;
+    color: #79551A;
+}
+
+.listo {
+    background: #DFF0D8;
+    color: #3C763D;
+}
+
+/* =================================
+   4. ESTADOS
+================================= */
+
+.cargando {
+    color: var(--color-primario);
+    animation: parpadear 1s infinite alternate;
+}
+
+@keyframes parpadear {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.4;
+    }
+}
+
+.hecha {
+    color: green;
+    text-decoration: line-through;
+}
+
+.input-error {
+    padding: 10px;
+    border: 2px solid red;
+    border-radius: 6px;
+}
+
+.small-error {
+    color: red;
+    display: block;
+}
+
+.activo {
+    background: green;
+    color: white;
+}
+
+.oculto {
+    display: none;
+}
+
+/* Pie de página */
+
+footer {
+    background: var(--color-primario);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Diseño para celulares */
+
+@media (max-width: 600px) {
+    .colores {
+        justify-content: center;
+    }
+
+    .seccion {
+        padding: 18px;
+    }
+}

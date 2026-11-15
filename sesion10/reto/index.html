@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi guía de estilos</title>
+    <link rel="stylesheet" href="kit.css">
+</head>
+<body>
+
+    <header class="encabezado">
+        <h1>Mi guía de estilos</h1>
+        <p>Colores, textos y componentes de mi diseño</p>
+    </header>
+
+    <main class="contenedor">
+
+        <!-- 1. PALETA DE COLORES -->
+        <section class="seccion">
+            <h2>1. Paleta de colores</h2>
+
+            <div class="colores">
+                <div class="muestra">
+                    <div class="color primario"></div>
+                    <p>Primario</p>
+                </div>
+
+                <div class="muestra">
+                    <div class="color secundario"></div>
+                    <p>Secundario</p>
+                </div>
+
+                <div class="muestra">
+                    <div class="color acento"></div>
+                    <p>Acento</p>
+                </div>
+
+                <div class="muestra">
+                    <div class="color fondo"></div>
+                    <p>Fondo</p>
+                </div>
+
+                <div class="muestra">
+                    <div class="color texto"></div>
+                    <p>Texto</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. TIPOGRAFÍA -->
+        <section class="seccion">
+            <h2>2. Tipografía</h2>
+
+            <h1>Este es un título H1</h1>
+            <h2>Este es un título H2</h2>
+            <h3>Este es un título H3</h3>
+
+            <p>
+                Este es un párrafo de ejemplo con un
+                <a href="#botones">enlace de ejemplo</a>.
+            </p>
+
+            <small>Este es un texto pequeño.</small>
+        </section>
+
+        <!-- 3. BOTONES -->
+        <section class="seccion" id="botones">
+            <h2>3. Botones</h2>
+
+            <button class="btn principal">Principal</button>
+            <button class="btn secundario-btn">Secundario</button>
+            <button class="btn peligro">Peligro</button>
+            <button class="btn deshabilitado" disabled>
+                Deshabilitado
+            </button>
+        </section>
+
+        <!-- 4. ALERTAS E INSIGNIAS -->
+        <section class="seccion">
+            <h2>4. Alertas</h2>
+
+            <div class="alerta info">Información importante</div>
+            <div class="alerta exito">Operación realizada correctamente</div>
+            <div class="alerta advertencia">Ten cuidado</div>
+            <div class="alerta error">Ha ocurrido un error</div>
+
+            <h3>Insignias</h3>
+
+            <span class="insignia nuevo">Nuevo</span>
+            <span class="insignia proceso">En proceso</span>
+            <span class="insignia listo">Completado</span>
+        </section>
+
+        <!-- 5. ESTADOS -->
+        <section class="seccion">
+            <h2>5. Estados</h2>
+
+            <h3>Cargando</h3>
+            <p class="cargando">Cargando información...</p>
+
+            <h3>Texto hecho</h3>
+            <p class="hecha">La tarea fue completada.</p>
+
+            <h3>Input con error</h3>
+            <input class="input-error"
+                   type="text"
+                   value="Dato incorrecto">
+
+            <small class="small-error">
+                Este campo contiene un error.
+            </small>
+
+            <h3>Botón activo</h3>
+            <button class="btn activo">Activo</button>
+
+            <!-- Este párrafo está oculto para demostrar
+                 el estado .oculto mediante CSS -->
+            <p class="oculto">Este texto no se muestra.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Mi guía de estilos - SENA ADSO</p>
+    </footer>
+
+</body>
+</html>
