@@ -1,0 +1,80 @@
+/* Solo ajustes de marca: la estructura la hace Bootstrap */
+:root {
+  --marca-vino: #5b1a3a;
+  --marca-vino-oscuro: #431029;
+  --marca-dorado: #c8963e;
+  --marca-crema: #f6e9e4;
+  --bs-body-font-family: Georgia, "Times New Roman", serif;
+  --bs-link-color: #7a2650;
+  --bs-link-hover-color: #431029;
+}
+
+body {
+  background-color: #fffaf8;
+  color: #2b1620;
+}
+
+.barra {
+  background-color: var(--marca-vino);
+}
+
+.barra .navbar-brand {
+  letter-spacing: 0.12em;
+  font-weight: 700;
+}
+
+.btn-marca {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--marca-vino);
+  --bs-btn-border-color: var(--marca-vino);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--marca-vino-oscuro);
+  --bs-btn-hover-border-color: var(--marca-vino-oscuro);
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--marca-vino-oscuro);
+  --bs-btn-active-border-color: var(--marca-vino-oscuro);
+  --bs-btn-focus-shadow-rgb: 200, 150, 62;
+}
+
+.btn-dorado {
+  --bs-btn-color: #2b1620;
+  --bs-btn-bg: var(--marca-dorado);
+  --bs-btn-border-color: var(--marca-dorado);
+  --bs-btn-hover-color: #2b1620;
+  --bs-btn-hover-bg: #b4832f;
+  --bs-btn-hover-border-color: #b4832f;
+  --bs-btn-active-color: #2b1620;
+  --bs-btn-active-bg: #b4832f;
+  --bs-btn-active-border-color: #b4832f;
+}
+
+.portada {
+  background-color: var(--marca-crema);
+}
+
+.portada h1 {
+  color: var(--marca-vino);
+}
+
+.beneficio {
+  border-color: var(--marca-crema);
+  border-top: 4px solid var(--marca-dorado);
+}
+
+.beneficio .card-title {
+  color: var(--marca-vino);
+}
+
+.form-control:focus {
+  border-color: var(--marca-dorado);
+  box-shadow: 0 0 0 0.25rem rgba(200, 150, 62, 0.3);
+}
+
+.pie {
+  background-color: var(--marca-vino-oscuro);
+  color: #f6e9e4;
+}
+
+.pie a {
+  color: var(--marca-dorado);
+}

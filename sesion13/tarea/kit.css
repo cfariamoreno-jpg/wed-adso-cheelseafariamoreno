@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>S13 · ¿Bootstrap o CSS propio?</title>
+  <style>
+    body { font-family: Georgia, serif; margin: 0; background: #fffaf8; color: #2b1620; line-height: 1.6; }
+    header, main { max-width: 900px; margin: 0 auto; padding: 1rem; }
+    h1, h2 { color: #5b1a3a; }
+    .capturas { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+    figure { margin: 0; border: 1px solid #e3cfc7; padding: 0.5rem; background: #fff; }
+    figure img { max-width: 100%; height: auto; display: block; }
+    figcaption { font-size: 0.9rem; padding-top: 0.5rem; }
+    .tabla-scroll { overflow-x: auto; }
+    table { border-collapse: collapse; width: 100%; min-width: 560px; }
+    th, td { border: 1px solid #e3cfc7; padding: 0.6rem; text-align: left; vertical-align: top; }
+    th { background: #5b1a3a; color: #fff; }
+    @media (min-width: 768px) { .capturas { grid-template-columns: 1fr 1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>¿Bootstrap o CSS propio?</h1>
+    <p>Comparación de mi landing de la sesión 8 (CSS propio) con la de la sesión 13 (Bootstrap): tienda de bolsos CHELIA.</p>
+    <p>
+      <a href="https://TU-USUARIO.github.io/TU-REPO/Sesion08/Reto/" target="_blank" rel="noopener">Ver landing sesión 8</a> ·
+      <a href="https://TU-USUARIO.github.io/TU-REPO/Sesion13/Reto/" target="_blank" rel="noopener">Ver landing sesión 13</a>
+    </p>
+  </header>
+
+  <main>
+    <section>
+      <h2>1. Capturas de Lighthouse</h2>
+      <div class="capturas">
+        <figure>
+          <img src="lighthouse-sesion08.png" alt="Resultado de Lighthouse de la landing de la sesión 8 (CSS propio)">
+          <figcaption>Sesión 8: CSS propio</figcaption>
+        </figure>
+        <figure>
+          <img src="lighthouse-sesion13.png" alt="Resultado de Lighthouse de la landing de la sesión 13 (Bootstrap)">
+          <figcaption>Sesión 13: Bootstrap</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>2. Tabla comparativa</h2>
+      <div class="tabla-scroll">
+        <table>
+          <thead>
+            <tr><th>Criterio</th><th>Sesión 8 (CSS propio)</th><th>Sesión 13 (Bootstrap)</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Puntaje de Rendimiento (Lighthouse)</td><td>COMPLETAR /100</td><td>COMPLETAR /100</td></tr>
+            <tr><td>Líneas de CSS escritas por mí</td><td>COMPLETAR líneas</td><td>80 líneas (solo ajustes de marca)</td></tr>
+            <tr><td>Tiempo que me tomó</td><td>COMPLETAR</td><td>COMPLETAR</td></tr>
+            <tr><td>Qué tan única se ve</td><td>COMPLETAR (por ejemplo: totalmente mía, controlé cada detalle)</td><td>Se parece a otras páginas con Bootstrap; la marca se logra con colores y tipografía</td></tr>
+            <tr><td>Qué tan fácil fue hacerla responsive</td><td>COMPLETAR (por ejemplo: tuve que escribir media queries y probar a mano)</td><td>Fácil: las clases como col-md-6 y row-cols-lg-3 ya traen el comportamiento</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>3. Conclusión</h2>
+      <p>
+        Para el proyecto final usaría Bootstrap como base y mi propio CSS solo para la marca. Con Bootstrap logré el navbar colapsable, las tarjetas en 1, 2 y 3 columnas y el formulario con validación en mucho menos tiempo y con menos CSS escrito. Aun así, entender el CSS propio (Flexbox, Grid y media queries) me sirvió para saber qué hace Bootstrap por detrás y para corregir cosas cuando no se ve como quiero.
+      </p>
+      <p>
+        El punto en contra es que las páginas con Bootstrap tienden a parecerse entre sí, por eso personalizo colores, botones y tipografía en styles.css. Si el proyecto necesitara un diseño muy distinto al estándar, usaría mi propio kit.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
