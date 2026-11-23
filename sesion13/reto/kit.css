@@ -78,3 +78,11 @@ body {
 .pie a {
   color: var(--marca-dorado);
 }
+
+.portada img {
+  max-width: 360px;
+  width: 100%;
+  height: auto;
+  max-height: 420px;
+  object-fit: cover;
+}
